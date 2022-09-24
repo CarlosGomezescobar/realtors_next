@@ -7,7 +7,7 @@ import { baseUrl, fetchApi } from '../utils/fetchApi';
 
 export const Banner = ({ purpose, title1, title2, desc1, desc2, buttonText, linkName, imageUrl }) => (
   <Flex flexWrap='wrap' justifyContent='center' alignItems='center' m='10'>
-    <Image src={imageUrl} width={500} height={300} />
+    <Image src={imageUrl} width={500} height={300} alt="banner"/>
     <Box p='5'>
       <Text color='gray.500' fontSize='sm' fontWeight='medium'>{purpose}</Text>
       <Text fontSize='3xl' fontWeight='bold'>{title1}<br />{title2}</Text>
@@ -26,7 +26,7 @@ const Home = ({ propertiesForSale, propertiesForRent }) => (
       purpose='RENT A HOME'
       title1='Rental Homes for'
       title2='Everyone'
-      desc1=' Explore from Apartments, builder floors, villas'
+      desc1='Explore from Apartments, builder floors, villas'
       desc2='and more'
       buttonText='Explore Renting'
       linkName='/search?purpose=for-rent'
@@ -37,10 +37,10 @@ const Home = ({ propertiesForSale, propertiesForRent }) => (
     </Flex>
     <Banner
       purpose='BUY A HOME'
-      title1=' Find, Buy & Own Your'
+      title1='Find, Buy & Own Your'
       title2='Dream Home'
-      desc1=' Explore from Apartments, land, builder floors,'
-      desc2=' villas and more'
+      desc1='Explore from Apartments, land, builder floors,'
+      desc2='villas and more'
       buttonText='Explore Buying'
       linkName='/search?purpose=for-sale'
       imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008'
